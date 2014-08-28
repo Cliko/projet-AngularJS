@@ -10,8 +10,8 @@ angular.module('projetMangaApp')
         // Public API here
         return {
             loadMangas:function(){
-                return $http.get('scipts/datas.json').success(function(data){
-                    mangas=data['manga'];
+                return $http.get('scripts/datas/data.json').success(function(data){
+                    mangas=data;
                 })
             },
             getMangas: function () {

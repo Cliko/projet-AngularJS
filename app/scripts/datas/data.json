@@ -1,7 +1,4 @@
 [
-    {
-    "end": -1,
-    "manga": [
         {
             "a": "neon-genesis-evangelion-shinji-ikari-raising-project",
             "h": 165689,
@@ -120929,9 +120926,4 @@
             "s": 1,
             "t": "Wakaouji-san to Himeno-kun"
         }
-    ],
-    "page": -1,
-    "start": 0,
-    "total": 13621
-}
 ]
