@@ -18,10 +18,10 @@ angular.module('projetMangaApp')
                 return mangas;
             },
             getMangaById: function (mangaId) {
-                for (var i = 0; i < mangas.length; i++) {
-                    var manga = mangas[i];
-                    if(manga.title===mangaId){
-                        return user;
+                for (var l = 0; l < mangas.length; l++) {
+                    var manga = mangas[l];
+                    if(manga.i===mangaId){
+                        return manga;
                     }
                 }
                 return {};

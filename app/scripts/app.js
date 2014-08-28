@@ -15,7 +15,7 @@ angular
         templateUrl: 'views/list.html',
         controller: 'listCtrl'
       })
-      .when('/manga/:id', {
+      .when('/manga/:mangaId?', {
         templateUrl: 'views/manga.html',
         controller: 'mangaCtrl'
       })
