@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('projetMangaApp')
-  .controller('ListCtrl', function ($scope, Mangas) {
+  .controller('listCtrl', function ($scope, mangas) {
     Mangas.loadMangas().success(function () {
-  			 $scope.mangas=Mangas.getMangas();
-  		})
+  			 $scope.mangas=mangas.getMangas();
+  		});
   });
