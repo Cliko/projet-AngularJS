@@ -3,12 +3,22 @@
 angular.module('projetMangaApp')
   .directive('readManga', function () {
     return {
-     template: '<read-manga><span class="btn btn-lg btn-success">Read</span></read-manga>',
-      restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-        scope.readManga=function(){
-        	$log.info('click read');
-        };
+     template: '<span><a class="btn btn-lg btn-success" style="background:{{color}}" ng-click"readManga()">Read</a></span>',
+      replace: false,
+      restrict: 'E',      
+      scope:{
+        color:'@',
+      },
+      link: function (scope, element, attrs) {
+
+                element.click(function(){
+
+                    scope.$apply(function(){
+                        scope.color='red !important';
+                        console.log('change color');
+                   });
+
+                });
       }
     };
   });

@@ -3,12 +3,22 @@
 angular.module('projetMangaApp')
   .directive('noreadManga', function () {
     return {
-      template: '<noread-manga><span class="btn btn-lg btn-success">No read</span></noread-manga>',
-      restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-        scope.noreadManga=function(){
-        	$log.info('click noread');
-        };
+      template: '<span><a class="btn btn-lg btn-success" style="background:{{color}}" ng-click"noreadManga()">No read</a></span>',
+      replace: false,
+      restrict: 'E',      
+      scope:{
+        color:'@',
+      },
+      link: function (scope, element, attrs) {
+
+                element.click(function(){
+
+                    scope.$apply(function(){
+                        scope.color='red !important';
+                        console.log('change color');
+                   });
+
+                });
       }
     };
   });

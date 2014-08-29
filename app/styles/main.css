@@ -46,6 +46,7 @@ ul.list_manga .img_manga {float: left; width: 20%; margin: 0; padding: 5px 0; ma
 ul.list_manga .img_manga img {width: 100%;}
 ul.list_manga .titre_manga {/*float: right;*/ /*width: 80%;*/ margin: 0;padding: 15px 5px; text-align: left;}
 
+span.valid {color:white; background: green;}
 
 /*page manga*/
 .couv_manga {margin-bottom: 20px;}
