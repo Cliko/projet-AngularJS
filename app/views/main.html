@@ -13,5 +13,9 @@
     </div>
   </form>
 </div>
-
+<div ng-controller="listCtrl">
+  <ul>
+    <li ng-repeat = "manga in mangas" ><a href="#/manga/{{manga.i}}"><img src="https://cdn.mangaeden.com/mangasimg/{{manga.im}}" alt="{{manga.t}}" title="{{manga.t}}" />{{manga.t}}</a></li> <!--attention à modif au besoin-->
+  </ul>
+</div>
 
