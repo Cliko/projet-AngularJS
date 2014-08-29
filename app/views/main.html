@@ -8,9 +8,9 @@
     <p>ou <br />
     Rechercher votre manga</p>
   </div>
-  <form name="form" ng-controller="FormCtrl">
-    <input type="search"placeholder="Votre manga" name="the_search" />
-    <input type="submit" value="Sagasu" ng-click="" />
+  <form name="form" ng-controller="formCtrl" ng-submit="searchManga" novalidate>
+    <input type="search"placeholder="Votre manga" name="the_search" ng-Required=""/>
+    <input ng-disabled="form.$invalid && Form.$dirty" type="submit" value="Sagasu" ng-click="" />
 
     <div class="filters">
       <div class="statut">
@@ -18,5 +18,13 @@
       <input type="checkbox" ng-model="mangaprogress">En cours
       </div>
     </div>
+      <div >
+          <ul class="list_manga">
+              <li ng-repeat = "manga in mangas |  orderBy:manga.t:false | limitTo:10 " ><a href="#/manga/{{manga.i}}">
+                  <div class="img_manga"><img src="https://cdn.mangaeden.com/mangasimg/{{manga.im}}" alt="{{manga.t}}" title="{{manga.t}}" /></div>
+                  <div class="titre_manga">{{manga.t}}</div></a>
+              </li> <!--attention à modif au besoin-->
+          </ul>
+      </div>
   </form>
 </div>
