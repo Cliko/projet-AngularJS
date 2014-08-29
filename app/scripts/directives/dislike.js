@@ -1,12 +1,14 @@
 'use strict';
 
 angular.module('projetMangaApp')
-  .directive('dislike', function () {
+  .directive('dislikeManga', function () {
     return {
-      template: '<div></div>',
+      template: '<dislike-manga class="btn btn-lg btn-success">Dislike</dislike-manga>',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-        element.text('this is the dislike directive');
+        scope.dislikeManga=function(){
+        	$log.info('click dislike');
+        };
       }
     };
   });
