@@ -27,6 +27,10 @@ angular
         templateUrl: 'views/loginout.html',
         controller: 'loginoutCtrl '
       })
+      .when('/logout', {
+        templateUrl: 'views/logout.html',
+        controller: 'loginoutCtrl '
+      })
       .when('/logout/:username', {
         templateUrl: 'views/loginout.html',
         controller: 'loginoutCtrl'
