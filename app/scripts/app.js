@@ -9,7 +9,7 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'mainCtrl'
       })
       .when('/list', {
         templateUrl: 'views/list.html',
