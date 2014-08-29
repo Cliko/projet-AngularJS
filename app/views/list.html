@@ -1,7 +1,7 @@
 <div ng-controller="listCtrl">
 	<h1>Les mangas</h1>
 	<ul class="list_manga">
-		<li ng-repeat = "manga in mangas |  orderBy:manga.t:false" ><a href="#/manga/{{manga.i}}">
+		<li ng-repeat = "manga in mangas |  orderBy:'t':false" ><a href="#/manga/{{manga.i}}">
 			<div class="img_manga"><img src="https://cdn.mangaeden.com/mangasimg/{{manga.im}}" alt="{{manga.t}}" title="{{manga.t}}" /></div>
 			<div class="titre_manga">{{manga.t}}</div></a>
 		</li> <!--attention à modif au besoin-->

@@ -19,7 +19,7 @@
     </div>
       <div ng-hide="form.search.$invalid">
           <ul class="list_manga">
-              <li ng-repeat = "manga in mangas | filter:search | limitTo:10 | orderBy:manga.t:false" ><a href="#/manga/{{manga.i}}">
+              <li ng-repeat = "manga in mangas | filter:search | limitTo:10 | orderBy:'t':false" ><a href="#/manga/{{manga.i}}">
                   <div class="img_manga"><img src="https://cdn.mangaeden.com/mangasimg/{{manga.im}}" alt="{{manga.t}}" title="{{manga.t}}" /></div>
                   <div class="titre_manga">{{manga.t}}</div></a>
               </li> <!--attention à modif au besoin-->
