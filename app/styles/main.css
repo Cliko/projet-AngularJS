@@ -8,3 +8,9 @@ padding-bottom: 30px;
 }
 
 /*h1 {margin-bottom: }*/
+
+ul.list_manga {list-style: none; width: 100%;display: block;}
+ul.list_manga li {display: block; overflow: overlay;}
+ul.list_manga .img_manga {float: left; width: 20%; margin: 0; padding: 5px 0;}
+ul.list_manga .img_manga img {width: 100%;}
+ul.list_manga .titre_manga {float: right; width: 80%; margin: 0; padding: 5px 0;}
