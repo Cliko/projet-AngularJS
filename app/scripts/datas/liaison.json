@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "54006fa9631cdb4797994687",
+    "_id_manga": "4e70e91ac092255ef70016d6",
+    "like": 1,
+    "dislike": 0,
+    "read": 1,
+    "noread": 0,
+  },
+  {
+    "_id": "54006fa9fc1c842d3bad640b",
+    "_id_manga": "4e70e91ac092255ef70016d6",
+    "like": 0,
+    "dislike": 1,
+    "read": 1,
+    "noread": 0,
+  },
+  {
+    "_id": "54006fa95aa015511c945b82",
+    "_id_manga": "4e70e91ac092255ef70016d6",
+    "like": 0,
+    "dislike": 1,
+    "read": 1,
+    "noread": 0,
+  },
+  {
+    "_id": "54006fa9e7d4eb475c818e05",
+    "_id_manga": "4e70e91ac092255ef70016d6",
+    "like": 1,
+    "dislike": 0,
+    "read": 0,
+    "noread": 1,
+  },
+  {
+    "_id_user": "54006fa9e6114b1aa9ad16f0",
+    "_id_manga": "4e70e91ac092255ef70016d6",
+    "like": 1,
+    "dislike": 0,
+    "read": 1,
+    "noread": 0,
+  }
+]

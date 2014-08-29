@@ -14,7 +14,7 @@ angular.module('projetMangaApp')
                 element.click(function(){
 
                     scope.$apply(function(){
-                        scope.color='red !important';
+                        scope.color='green !important';
                         console.log('change color');
                    });
 
