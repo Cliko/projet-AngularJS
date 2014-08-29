@@ -3,16 +3,14 @@
   <ul>
     <li><a href="#/list">Les mangas</a></li>
   </ul>
-  <form name="form" ng-controller="FormCtrl">
-    <input type="search"placeholder="Entrer votre manga" name="the_search" />
-    <input type="submit" value="Rechercher" ng-click="" />
-
-    <div class="filters">
-      <div class="statut">
-      <input type="checkbox" ng-model="mangaend"> Publication terminée<br />
-      <input type="checkbox" ng-model="mangaprogress"> Publication en cours<br />
-      <input type="checkbox" ng-model="lastmanga"> Dernier chapitre publié 
+  <form name="form" ng-controller="FormCtrl" >
+    <input type="search"placeholder="Rechercher un manga" name="q" />
+      <div class="filters">
+          <div class="statut">
+              <input type="checkbox" ng-model="mangaend" name="end"> Publication terminée<br />
+              <input type="checkbox" ng-model="mangaprogress" name="progress"> Publication en cours<br />
+          </div>
       </div>
-    </div>
+      <input type="submit" value="Rechercher" ng-click="" />
   </form>
 </div>
