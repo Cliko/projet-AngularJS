@@ -1,17 +1,21 @@
 <div class="search">
   <h1>Appli Manga</h1>
-  <ul>
-    <li><a href="#/list">Les mangas</a></li>
-  </ul>
+<!--   <ul>
+    <li><a href="#/list">Mangas' List ;)</a></li>
+  </ul> -->
+  <div class="home">
+    <a href="#/list">Liste des mangas</a><br />
+    <p>ou <br />
+    Rechercher votre manga</p>
+  </div>
   <form name="form" ng-controller="FormCtrl">
-    <input type="search"placeholder="Entrer votre manga" name="the_search" />
-    <input type="submit" value="Rechercher" ng-click="" />
+    <input type="search"placeholder="Votre manga" name="the_search" />
+    <input type="submit" value="Sagasu" ng-click="" />
 
     <div class="filters">
       <div class="statut">
-      <input type="checkbox" ng-model="mangaend"> Publication terminée<br />
-      <input type="checkbox" ng-model="mangaprogress"> Publication en cours<br />
-      <input type="checkbox" ng-model="lastmanga"> Dernier chapitre publié 
+      <input type="checkbox" ng-model="mangaend">Terminé
+      <input type="checkbox" ng-model="mangaprogress">En cours
       </div>
     </div>
   </form>
