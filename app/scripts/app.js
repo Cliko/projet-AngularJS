@@ -27,7 +27,7 @@ angular
         templateUrl: 'views/loginout.html',
         controller: 'loginoutCtrl '
       })
-      .when('/logout/:username', {
+      .when('/logout/:username?', {
         templateUrl: 'views/loginout.html',
         controller: 'loginoutCtrl'
       })
