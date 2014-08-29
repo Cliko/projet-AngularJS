@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('likeApp')
+angular.module('projetMangaApp')
   .directive('read', function () {
     return {
       template: '<div></div>',
