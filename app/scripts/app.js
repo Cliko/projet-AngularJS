@@ -15,6 +15,10 @@ angular
         templateUrl: 'views/list.html',
         controller: 'listCtrl'
       })
+      .when('/user', {
+        templateUrl: 'views/user.html',
+        controller: 'userCtrl'
+      })
       .when('/manga/:mangaId?', {
         templateUrl: 'views/manga.html',
         controller: 'mangaCtrl'
