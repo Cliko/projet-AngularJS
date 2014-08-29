@@ -5,4 +5,5 @@ angular.module('projetMangaApp')
         mangas.loadMangas().success(function () {
             $scope.mangas=mangas.getMangas();
         });
-  });
+        $scope.statut = {};
+    });
