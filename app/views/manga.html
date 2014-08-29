@@ -1,15 +1,16 @@
 <div ng-controller="mangaCtrl">
+    {{test}}
   <h2>{{manga.t}}</h2> <!--T = title - attention, sûrement à modif-->
 
   <div>
-    <img src="{{manga.im}}" /> <!--im = manga's image - attention, sûrement à modif-->
+    <img src="https://cdn.mangaeden.com/mangasimg/{{manga.im}}" /> <!--im = manga's image - attention, sûrement à modif-->
   </div>
   
   <div>
     Statut : <span>{{manga.s}}</span> <!--s = status - attention, sûrement à modif-->
   </div>
   <div>
-  Dernier chapitre :  <span><a href="https://www.mangaeden.com/api/chapter/[chapter.id]/">{{manga.ld}}</a></span>  <!--ld = last chapter date - attention, sûrement à modif-->
+  Dernier chapitre :  <span><a href="https://www.mangaeden.com/api/chapter/[chapter.id]/">{{manga.ld | date:'dd/MM/yyyy'}}</a></span>  <!--ld = last chapter date - attention, sûrement à modif-->
   </div>
 
   <div>

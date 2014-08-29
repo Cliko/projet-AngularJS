@@ -11,6 +11,26 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/list', {
+        templateUrl: 'views/list.html',
+        controller: 'listCtrl'
+      })
+      .when('/manga/:mangaId?', {
+        templateUrl: 'views/manga.html',
+        controller: 'mangaCtrl'
+      })
+      .when('/login/:username', {
+        templateUrl: 'views/loginout.html',
+        controller: 'loginoutCtrl '
+      })
+      .when('/logout/:username', {
+        templateUrl: 'views/loginout.html',
+        controller: 'loginoutCtrl'
+      })
+      .when('/search/:value', {
+        templateUrl: 'views/search.html',
+        controller: 'searchCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
