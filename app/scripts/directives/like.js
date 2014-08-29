@@ -1,12 +1,14 @@
 'use strict';
 
-angular.module('likeApp')
-  .directive('like', function () {
+angular.module('projetMangaApp')
+  .directive('like', function ($log, $window) {
     return {
-      template: '<div></div>',
+      template: '<div>test</div>',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-        element.text('this is the like directive');
+        scope.likeManga=function(){
+        	$log.info('click like');
+        };
       }
     };
   });

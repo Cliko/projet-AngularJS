@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('likeApp')
+angular.module('projetMangaApp')
   .directive('dislike', function () {
     return {
       template: '<div></div>',
