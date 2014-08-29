@@ -10,16 +10,16 @@
     Statut : <span>{{manga.s}}</span> <!--s = status - attention, sûrement à modif-->
   </div>
   <div>
-  Dernier chapitre :  <span><a href="https://www.mangaeden.com/api/chapter/[chapter.id]/">{{manga.ld | date:'dd/MM/yyyy'}}</a></span>  <!--ld = last chapter date - attention, sûrement à modif-->
+  Dernier chapitre :  <span><a href="https://www.mangaeden.com/api/chapter/[chapter.id]/">{{manga.ld | date : 'dd/MM/yyyy'}}</a></span>  <!--ld = last chapter date - attention, sûrement à modif-->
   </div>
 
   <div>
   Note :  <span>{{manga.h}}</span>  <!--h = hits - attention, sûrement à modif-->
   </div>
   <div class="avis">
-  <like-manga><a class="btn btn-lg btn-success" ng-click"likeManga()">Like</a></like-manga>
-  <dislike-manga><a class="btn btn-lg btn-success" ng-click"dislikeManga()">Dislike</a></dislike-manga>
-  <read-manga><a class="btn btn-lg btn-success" ng-click"readManga()">Read</a></read-manga>
-  <noread-manga><a class="btn btn-lg btn-success" ng-click"noreadManga()">No read</a></noread-manga>
+  <like-manga></like-manga>
+  <dislike-manga></dislike-manga>
+  <read-manga></read-manga>
+  <noread-manga></noread-manga>
 
 </div>

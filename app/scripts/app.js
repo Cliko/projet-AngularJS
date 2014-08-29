@@ -23,7 +23,7 @@ angular
         templateUrl: 'views/manga.html',
         controller: 'mangaCtrl'
       })
-      .when('/login/:username', {
+      .when('/login', {
         templateUrl: 'views/loginout.html',
         controller: 'loginoutCtrl '
       })
