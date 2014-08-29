@@ -1,5 +1,9 @@
 <div ng-controller="listCtrl">
-	<ul>
-		<li ng-repeat = "manga in mangas" ><a href="#/manga/{{manga.i}}"><img src="https://cdn.mangaeden.com/mangasimg/{{manga.im}}" alt="{{manga.t}}" title="{{manga.t}}" />{{manga.t}}</a></li> <!--attention à modif au besoin-->
+	<h1>Les mangas</h1>
+	<ul class="list_manga">
+		<li ng-repeat = "manga in mangas" ><a href="#/manga/{{manga.i}}">
+			<div class="img_manga"><img src="https://cdn.mangaeden.com/mangasimg/{{manga.im}}" alt="{{manga.t}}" title="{{manga.t}}" /></div>
+			<div class="titre_manga">{{manga.t}}</div></a>
+		</li> <!--attention à modif au besoin-->
 	</ul>
 </div>
