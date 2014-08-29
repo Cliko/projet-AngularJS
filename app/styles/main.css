@@ -12,10 +12,14 @@
 
 
 /*Page main*/
+body {text-align: center;}
 .search {/* width: 500px; margin: 0 auto;*/ text-align: center; /*background-color: #CCD;*/ padding-top: 10px; padding-bottom: 30px;}
 
 h1 {font:50px 'mangaregular';}
-.home a {font-size: 1.4em; color: red;}
+h2 {font:30px 'mangaregular';}
+a {color:#000!important;}
+a:hover {text-decoration: underline!important;}
+.home a {font-size: 1.4em; color: red!important;}
 .home a:hover {text-decoration: underline;}
 .home p {line-height: 30px;}
 
@@ -37,7 +41,33 @@ border-radius: 5px;}
 
 /*Page List*/
 ul.list_manga {list-style: none; width: 100%;display: block;}
-ul.list_manga li {display: block; overflow: overlay;}
-ul.list_manga .img_manga {float: left; width: 20%; margin: 0; padding: 5px 0;}
+ul.list_manga li {display: block; overflow: overlay; margin-left: 5px;}
+ul.list_manga .img_manga {float: left; width: 20%; margin: 0; padding: 5px 0; margin-right: 15px;}
 ul.list_manga .img_manga img {width: 100%;}
-ul.list_manga .titre_manga {float: right; width: 80%; margin: 0; padding: 5px 0;}
+ul.list_manga .titre_manga {/*float: right;*/ /*width: 80%;*/ margin: 0;padding: 15px 5px; text-align: left;}
+
+
+/*page manga*/
+.couv_manga {margin-bottom: 20px;}
+.avis {margin-top: 20px;}
+span a.btn {/*background-color: #AEBCBF;*/ color: #fff!important; background: rgb(174,188,191); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(174,188,191,1) 0%, rgba(144,155,154,1) 98%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(174,188,191,1)), color-stop(98%,rgba(144,155,154,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(174,188,191,1) 0%,rgba(144,155,154,1) 98%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(174,188,191,1) 0%,rgba(144,155,154,1) 98%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(174,188,191,1) 0%,rgba(144,155,154,1) 98%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(174,188,191,1) 0%,rgba(144,155,154,1) 98%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#909b9a',GradientType=0 ); /* IE6-9 */
+}
+span a.btn:hover {background: rgb(144,155,154); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(144,155,154,1) 2%, rgba(174,188,191,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,rgba(144,155,154,1)), color-stop(100%,rgba(174,188,191,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(144,155,154,1) 2%,rgba(174,188,191,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(144,155,154,1) 2%,rgba(174,188,191,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(144,155,154,1) 2%,rgba(174,188,191,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(144,155,154,1) 2%,rgba(174,188,191,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#909b9a', endColorstr='#aebcbf',GradientType=0 ); /* IE6-9 */
+}
+
+/*page user*/
+h3 {font-weight: bold; font-size: 1.2em;}

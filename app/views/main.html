@@ -8,9 +8,9 @@
     <p>ou <br />
     Rechercher votre manga</p>
   </div>
-  <form name="form" ng-controller="formCtrl" ng-submit="searchManga" novalidate>
-    <input type="search"placeholder="Votre manga" name="the_search" ng-Required=""/>
-    <input ng-disabled="form.$invalid && Form.$dirty" type="submit" value="Sagasu" ng-click="" />
+  <form name="form" ng-controller="FormCtrl">
+    <input type="search"placeholder="Votre manga" name="the_search" />
+    <input type="submit" value="Sagasu" ng-click="" />
 
     <div class="filters">
       <div class="statut">

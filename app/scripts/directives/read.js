@@ -1,12 +1,14 @@
 'use strict';
 
-angular.module('likeApp')
-  .directive('read', function () {
+angular.module('projetMangaApp')
+  .directive('readManga', function () {
     return {
-      template: '<div></div>',
+     template: '<read-manga class="btn btn-lg btn-success">Read</read-manga>',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-        element.text('this is the read directive');
+        scope.readManga=function(){
+        	$log.info('click read');
+        };
       }
     };
   });

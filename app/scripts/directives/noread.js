@@ -1,12 +1,14 @@
 'use strict';
 
-angular.module('likeApp')
-  .directive('noread', function () {
+angular.module('projetMangaApp')
+  .directive('noreadManga', function () {
     return {
-      template: '<div></div>',
+      template: '<noread-manga class="btn btn-lg btn-success">Like</noread-manga>',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-        element.text('this is the noread directive');
+        scope.noreadManga=function(){
+        	$log.info('click noread');
+        };
       }
     };
   });
