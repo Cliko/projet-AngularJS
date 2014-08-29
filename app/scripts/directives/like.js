@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('projetMangaApp')
-  .directive('like', function ($log, $window) {
+  .directive('likeManga', function ($log, $window) {
     return {
       template: '<div>test</div>',
       restrict: 'E',
